@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Studio Milton Gasparotto | Emagrecimento e Redução de Dor em Paranavaí</title>
+  <meta name="description" content="Personal trainer em Paranavaí há mais de 10 anos. Especialista em emagrecimento e redução de dores articulares. Studio privado no Centro. Resultados reais em 60 dias." />
+  <meta property="og:title" content="Pare de Treinar Sem Resultado | Milton Gasparotto Personal Trainer" />
+  <meta property="og:description" content="Emagrecimento e redução de dor com método exclusivo. Studio privativo no Centro de Paranavaí. Garantia de 30 dias no plano anual." />
+  <meta property="og:image" content="https://personalstudio.pvai.com.br/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- META PIXEL — Substitua YOUR_PIXEL_ID -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','YOUR_PIXEL_ID');
+    fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --verde: #39FF14;
+      --verde-glow: rgba(57,255,20,0.15);
+      --verde-glow2: rgba(57,255,20,0.25);
+      --preto: #080808;
+      --esc: #0f0f0f;
+      --card: #141414;
+      --borda: #1e1e1e;
+      --borda2: #2a2a2a;
+      --branco: #f0f0f0;
+      --dimmed: #999;
+      --T: 'Bebas Neue', sans-serif;
+      --B: 'DM Sans', sans-serif;
+      /* tamanho base maior para público +40 */
+      font-size: 18px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--preto);color:var(--branco);font-family:var(--B);font-weight:300;line-height:1.7;overflow-x:hidden;font-size:1rem}
+    body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5}
+
+    /* ── TOPO FIXO: barra urgência + nav num único wrapper fixo ── */
+    #topo-fixo{position:fixed;top:0;left:0;right:0;z-index:200}
+    .ub{background:var(--verde);color:#000;text-align:center;padding:.65rem 1rem;font-size:.95rem;font-weight:700;letter-spacing:.03em}
+    .ub span{font-weight:400}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 5vw;background:rgba(8,8,8,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--borda);transition:padding .3s}
+    nav.sc{padding:.75rem 5vw}
+    .logo{font-family:var(--T);font-size:1.7rem;letter-spacing:.1em;color:var(--branco)}
+    .logo em{color:var(--verde);font-style:normal}
+    .nav-r{display:flex;gap:.6rem;align-items:center}
+
+    /* ── BUTTONS ── */
+    .bg{background:none;border:1px solid var(--borda2);color:var(--dimmed);padding:.6rem 1.1rem;border-radius:3px;font-family:var(--B);font-size:.95rem;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;transition:all .2s}
+    .bg:hover{border-color:var(--verde);color:var(--verde)}
+    .bp{background:var(--verde);color:#000;font-family:var(--B);font-weight:700;font-size:1rem;letter-spacing:.03em;padding:.75rem 1.6rem;border:none;border-radius:3px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:.45rem;transition:all .2s}
+    .bp:hover{box-shadow:0 0 30px var(--verde-glow2);transform:translateY(-1px)}
+    .bp:active{transform:translateY(0)}
+    .bo{background:transparent;color:var(--verde);font-family:var(--B);font-weight:500;font-size:1rem;padding:.75rem 1.6rem;border:1px solid var(--verde);border-radius:3px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:.45rem;transition:all .2s}
+    .bo:hover{background:var(--verde-glow);box-shadow:0 0 20px var(--verde-glow);transform:translateY(-1px)}
+
+    /* ── HERO ── */
+    #hero{min-height:100svh;display:grid;grid-template-columns:55% 1fr;align-items:center;padding:0 5vw;gap:3rem;position:relative;overflow:hidden}
+    .hbg{position:absolute;top:0;right:-10%;width:60vw;height:100%;background:radial-gradient(ellipse at 70% 40%,rgba(57,255,20,.06) 0%,transparent 60%);pointer-events:none}
+    .eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:rgba(57,255,20,.08);border:1px solid rgba(57,255,20,.2);color:var(--verde);font-size:.85rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:.4rem 1rem;border-radius:2px;margin-bottom:1.5rem;animation:fU .5s ease both}
+    .eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--verde);box-shadow:0 0 8px var(--verde);animation:pl 2s infinite}
+    @keyframes pl{0%,100%{opacity:1}50%{opacity:.3}}
+    h1.hero{font-family:var(--T);font-size:clamp(4rem,6.5vw,7.5rem);line-height:.9;letter-spacing:.01em;animation:fU .6s .1s ease both}
+    h1.hero .vd{color:var(--verde)}
+    h1.hero .ot{-webkit-text-stroke:1px rgba(240,240,240,.28);color:transparent}
+    .hero-p{margin-top:1.8rem;font-size:1.15rem;color:var(--dimmed);max-width:520px;line-height:1.8;animation:fU .6s .2s ease both}
+    .hero-p strong{color:var(--branco);font-weight:500}
+    .hgar{margin-top:1rem;display:inline-flex;align-items:center;gap:.5rem;font-size:1rem;color:var(--dimmed);animation:fU .6s .25s ease both}
+    .hgar svg{color:var(--verde);flex-shrink:0}
+    .hbtns{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.75rem;animation:fU .6s .3s ease both}
+    .hbtns .bp,.hbtns .bo{font-size:1.1rem;padding:1rem 2.2rem}
+    .hps{margin-top:2.5rem;display:flex;align-items:center;gap:1rem;animation:fU .6s .4s ease both}
+    .avs{display:flex}
+    .av{width:40px;height:40px;border-radius:50%;border:2px solid var(--preto);background:var(--card);margin-left:-8px;display:flex;align-items:center;justify-content:center;font-family:var(--T);font-size:1.2rem;color:var(--verde)}
+    .av:first-child{margin-left:0}
+    .ptxt{font-size:.95rem;color:var(--dimmed)}
+    .ptxt strong{color:var(--branco);display:block;font-size:1rem}
+    .sm{color:var(--verde);font-size:.85rem}
+
+    /* HERO VISUAL */
+    .hv{position:relative;display:flex;justify-content:flex-end;animation:fI 1s .4s ease both}
+    .hfoto{width:100%;max-width:420px;aspect-ratio:3/4;border-radius:6px;overflow:hidden;border:1px solid var(--borda2);background:linear-gradient(160deg,#141414,#1a1a1a);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:#222;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+    .hfoto img{width:100%;height:100%;object-fit:cover}
+    .hf1{position:absolute;bottom:1.5rem;left:-3rem;background:rgba(14,14,14,.95);border:1px solid var(--borda2);border-left:3px solid var(--verde);padding:.9rem 1.3rem;border-radius:4px;backdrop-filter:blur(10px);min-width:180px}
+    .fn{font-family:var(--T);font-size:2.4rem;color:var(--verde);line-height:1}
+    .fl{font-size:.85rem;color:var(--dimmed);margin-top:.15rem}
+    .hf2{position:absolute;top:1.5rem;right:-2.5rem;background:rgba(14,14,14,.95);border:1px solid var(--borda2);padding:.75rem 1rem;border-radius:4px;backdrop-filter:blur(10px);display:flex;align-items:center;gap:.5rem;font-size:.9rem}
+    .ck{color:var(--verde)}
+
+    /* DIVIDER */
+    .div{height:1px;background:linear-gradient(90deg,transparent,var(--borda),transparent);margin:0 5vw}
+
+    /* CRED */
+    #cred{padding:2.5rem 5vw;display:flex;align-items:center;gap:2.5rem;overflow-x:auto}
+    .cl{font-size:.82rem;letter-spacing:.15em;text-transform:uppercase;color:#444;white-space:nowrap;flex-shrink:0}
+    .ci{display:flex;gap:2rem;align-items:center;flex-wrap:wrap}
+    .c-it{font-family:var(--T);font-size:1.05rem;letter-spacing:.12em;color:#333;white-space:nowrap}
+
+    /* SECTION LABELS */
+    .sl{font-size:.8rem;letter-spacing:.25em;text-transform:uppercase;color:var(--verde);margin-bottom:.6rem;display:flex;align-items:center;gap:.5rem}
+    .sl::before{content:'';width:20px;height:1px;background:var(--verde)}
+    .st{font-family:var(--T);font-size:clamp(2.6rem,4.5vw,4.2rem);line-height:.95}
+    .st .vd{color:var(--verde)}
+    .ss{color:var(--dimmed);font-size:1.05rem;max-width:540px;margin-top:.8rem;margin-bottom:3rem;line-height:1.8}
+
+    /* DORES */
+    #dores{padding:5rem 5vw;background:var(--esc)}
+    .dg{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-top:3rem}
+    .dl{display:flex;flex-direction:column;gap:1.2rem}
+    .di{display:flex;gap:1rem;align-items:flex-start;padding:1.3rem;border:1px solid var(--borda);border-radius:4px;background:var(--card);transition:border-color .3s,background .3s;cursor:default}
+    .di:hover{border-color:rgba(57,255,20,.2);background:#171717}
+    .dic{width:38px;height:38px;border-radius:4px;background:rgba(255,68,68,.1);border:1px solid rgba(255,68,68,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem}
+    .dt strong{display:block;font-size:1rem;font-weight:500;color:var(--branco);margin-bottom:.25rem}
+    .dt span{font-size:.92rem;color:var(--dimmed)}
+
+    /* VAGAS — card de escassez dinâmico */
+    #vagas{padding:3rem 5vw;background:var(--card);border-top:1px solid var(--borda);border-bottom:1px solid var(--borda)}
+    .vagas-inner{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:900px;margin:0 auto}
+    .vaga-card{background:var(--esc);border:1px solid var(--borda2);border-radius:6px;padding:1.8rem;position:relative;overflow:hidden}
+    .vaga-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--verde)}
+    .vaga-titulo{font-family:var(--T);font-size:1.5rem;letter-spacing:.05em;margin-bottom:.5rem}
+    .vaga-bar-wrap{background:var(--borda2);border-radius:2px;height:8px;margin:.8rem 0}
+    .vaga-bar{height:8px;border-radius:2px;background:var(--verde);transition:width 1s ease;box-shadow:0 0 8px var(--verde-glow)}
+    .vaga-num{font-family:var(--T);font-size:2.8rem;color:var(--verde);line-height:1}
+    .vaga-label{font-size:.88rem;color:var(--dimmed);margin-top:.2rem}
+    .vaga-espera{font-size:.85rem;color:#f0a500;margin-top:.5rem;display:flex;align-items:center;gap:.4rem}
+    .vaga-espera svg{flex-shrink:0}
+
+    /* SERVICOS */
+    #servicos{padding:5rem 5vw}
+    .sg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--borda);border:1px solid var(--borda);border-radius:6px;overflow:hidden}
+    .sc2{background:var(--card);padding:2.5rem 2rem 2rem;display:flex;flex-direction:column;gap:1rem;position:relative;transition:background .3s}
+    .sc2:hover{background:#181818}
+    .cb{position:absolute;top:1.2rem;right:1.2rem;background:var(--verde);color:#000;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.25rem .7rem;border-radius:2px}
+    .cnb{position:absolute;bottom:1rem;right:1.5rem;font-family:var(--T);font-size:6rem;line-height:1;color:rgba(255,255,255,.02);pointer-events:none;user-select:none}
+    .ci2{width:46px;height:46px;border:1px solid rgba(57,255,20,.25);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--verde)}
+    .ct{font-family:var(--T);font-size:1.9rem;letter-spacing:.03em;line-height:1}
+    .cb2{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-top:.3rem;flex:1}
+    .cb2 li{font-size:.95rem;color:var(--dimmed);display:flex;gap:.5rem;align-items:flex-start;line-height:1.55}
+    .cb2 li::before{content:'→';color:var(--verde);font-size:.8rem;margin-top:.1rem;flex-shrink:0}
+
+    /* PREÇO NOS CARDS */
+    .cpw{border-top:1px solid var(--borda);padding-top:1.2rem;margin-top:.5rem;display:flex;flex-direction:column;gap:.4rem}
+    .preco-anual-label{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--verde);font-weight:600}
+    .preco-anual-valor{font-family:var(--T);font-size:2.5rem;color:var(--branco);line-height:1}
+    .preco-anual-detalhe{font-size:.9rem;color:var(--dimmed)}
+    .preco-sep{height:1px;background:var(--borda);margin:.5rem 0}
+    .preco-avulso{font-size:.9rem;color:var(--dimmed)}
+    .preco-avulso strong{color:#aaa}
+    .pgto-linha{display:flex;align-items:center;gap:.4rem;font-size:.82rem;color:var(--dimmed);margin-top:.2rem}
+    .pgto-linha svg{color:var(--verde);flex-shrink:0}
+    .garantia-mini{display:flex;align-items:center;gap:.4rem;font-size:.82rem;color:var(--verde);margin-top:.4rem}
+    .garantia-mini svg{flex-shrink:0}
+    .cc{width:100%;font-size:1rem;padding:.9rem 1rem;margin-top:.5rem}
+    .cgm{font-size:.78rem;color:var(--dimmed);text-align:center;margin-top:.25rem}
+
+    /* TIMER */
+    #timer{background:var(--card);border-top:1px solid var(--borda);border-bottom:1px solid var(--borda);padding:1.5rem 5vw;display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap}
+    .tl{font-size:.95rem;color:var(--dimmed)}
+    .tl strong{color:var(--verde)}
+    .td{display:flex;gap:.5rem;align-items:center}
+    .tb{background:#0c0c0c;border:1px solid var(--borda2);border-radius:3px;padding:.4rem .8rem;text-align:center;min-width:52px}
+    .tn{font-family:var(--T);font-size:1.8rem;color:var(--verde);line-height:1}
+    .tt{font-size:.68rem;letter-spacing:.1em;color:var(--dimmed);text-transform:uppercase}
+    .ts{font-family:var(--T);font-size:1.6rem;color:var(--borda2)}
+
+    /* PROCESSO */
+    #processo{padding:5rem 5vw;background:var(--esc)}
+    .ps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:3rem;position:relative}
+    .ps::before{content:'';position:absolute;top:2.5rem;left:10%;right:10%;height:1px;background:linear-gradient(90deg,var(--verde),rgba(57,255,20,.1));z-index:0}
+    .sp{padding:0 1.5rem 2rem;position:relative;z-index:1}
+    .sc3{width:50px;height:50px;border-radius:50%;border:1px solid var(--verde);background:var(--preto);display:flex;align-items:center;justify-content:center;font-family:var(--T);font-size:1.4rem;color:var(--verde);margin-bottom:1.5rem;box-shadow:0 0 20px var(--verde-glow)}
+    .st2{font-weight:500;font-size:1.05rem;margin-bottom:.5rem}
+    .sd{font-size:.92rem;color:var(--dimmed);line-height:1.65}
+
+    /* GARANTIA */
+    #garantia{padding:5rem 5vw;display:grid;grid-template-columns:auto 1fr;gap:4rem;align-items:center;background:var(--card);border-top:1px solid var(--borda);border-bottom:1px solid var(--borda)}
+    .gs{width:170px;height:170px;border-radius:50%;border:2px solid var(--verde);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:1rem;box-shadow:0 0 40px var(--verde-glow),inset 0 0 40px rgba(57,255,20,.03);flex-shrink:0}
+    .gd{font-family:var(--T);font-size:3.8rem;color:var(--verde);line-height:1}
+    .gt{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dimmed);margin-top:.2rem}
+
+    /* DIFERENCIAIS PRESENCIAL */
+    #difs{padding:5rem 5vw}
+    .dif-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--borda);border:1px solid var(--borda);border-radius:6px;overflow:hidden;margin-top:3rem}
+    .dif-item{background:var(--card);padding:1.8rem;transition:background .3s}
+    .dif-item:hover{background:#181818}
+    .dif-ico{width:42px;height:42px;border:1px solid rgba(57,255,20,.2);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--verde);margin-bottom:1rem}
+    .dif-titulo{font-weight:600;font-size:1rem;color:var(--branco);margin-bottom:.4rem}
+    .dif-desc{font-size:.92rem;color:var(--dimmed);line-height:1.7}
+
+    /* DIFERENCIAIS CONSULTORIA */
+    #difs-online{padding:5rem 5vw;background:var(--esc)}
+
+    /* SOBRE */
+    #sobre{padding:5rem 5vw;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+    .sfoto{width:100%;aspect-ratio:3/4;border-radius:4px;background:var(--card);border:1px solid var(--borda);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem;color:#222;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;overflow:hidden}
+    .sfoto img{width:100%;height:100%;object-fit:cover}
+    .sln{position:absolute;left:-1.5rem;top:3rem;bottom:3rem;width:2px;background:linear-gradient(180deg,transparent,var(--verde),transparent)}
+    .svw{position:relative}
+    .slst{list-style:none;margin:1.5rem 0 2rem;display:flex;flex-direction:column;gap:.8rem}
+    .slst li{font-size:.95rem;color:var(--branco);display:flex;align-items:center;gap:.6rem;line-height:1.5}
+    .slst li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--verde);flex-shrink:0}
+
+    /* DEPOIMENTOS */
+    #depo{padding:5rem 5vw;background:var(--esc)}
+    .dg2{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--borda);margin-top:3rem}
+    .dc{background:var(--card);padding:2rem;display:flex;flex-direction:column;gap:1rem;transition:background .3s}
+    .dc:hover{background:#181818}
+    .dstars{color:var(--verde);font-size:.95rem;letter-spacing:.05em}
+    .dres{display:inline-flex;align-items:center;gap:.4rem;background:rgba(57,255,20,.08);border:1px solid rgba(57,255,20,.15);color:var(--verde);font-size:.82rem;font-weight:500;padding:.25rem .8rem;border-radius:2px;width:fit-content}
+    .dtxt{font-size:.95rem;color:var(--dimmed);line-height:1.8;font-style:italic;flex:1}
+    .dft{display:flex;align-items:center;gap:.75rem}
+    .dav{width:42px;height:42px;border-radius:50%;background:var(--esc);border:1px solid var(--borda2);display:flex;align-items:center;justify-content:center;font-family:var(--T);font-size:1.2rem;color:var(--verde);flex-shrink:0}
+    .dnm{font-size:.95rem;font-weight:500;color:var(--branco)}
+    .din{font-size:.8rem;color:var(--dimmed)}
+
+    /* FAQ */
+    #faq{padding:5rem 5vw}
+    .fg{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--borda);border:1px solid var(--borda);border-radius:6px;overflow:hidden;margin-top:3rem}
+    .fi{background:var(--card);padding:1.6rem 2rem;cursor:pointer;transition:background .2s;border-bottom:1px solid var(--borda)}
+    .fi:hover{background:#181818}
+    .fp{font-size:1rem;font-weight:500;color:var(--branco);display:flex;justify-content:space-between;align-items:center;gap:1rem;line-height:1.4}
+    .fp::after{content:'+';color:var(--verde);font-size:1.5rem;font-weight:300;flex-shrink:0;transition:transform .3s}
+    .fi.open .fp::after{transform:rotate(45deg)}
+    .fr{font-size:.95rem;color:var(--dimmed);line-height:1.75;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease}
+    .fi.open .fr{max-height:300px;padding-top:.75rem}
+
+    /* CTA FINAL */
+    #ctaf{padding:7rem 5vw;text-align:center;position:relative;overflow:hidden}
+    #ctaf::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(57,255,20,.08) 0%,transparent 60%);pointer-events:none}
+    .cft{font-family:var(--T);font-size:clamp(3.8rem,6vw,7rem);line-height:.92;margin-bottom:1.5rem}
+    .cft .vd{color:var(--verde)}
+    .cfs{color:var(--dimmed);max-width:520px;margin:0 auto 2.5rem;font-size:1.05rem;line-height:1.8}
+    .cfb{display:flex;justify-content:center;flex-wrap:wrap;gap:.75rem;margin-bottom:2rem}
+    .cfb .bp,.cfb .bo{font-size:1.1rem;padding:1.1rem 2.5rem}
+    .segs{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+    .seg{display:flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--dimmed)}
+    .seg svg{color:var(--verde)}
+
+    /* FOOTER */
+    footer{border-top:1px solid var(--borda);padding:2rem 5vw;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;font-size:.88rem;color:#444}
+    .flogo{font-family:var(--T);font-size:1.3rem;color:#333}
+    .flogo em{color:var(--verde);font-style:normal}
+    footer a{color:#444;text-decoration:none}
+    footer a:hover{color:var(--dimmed)}
+
+    /* WHATSAPP FLOAT */
+    .wf{position:fixed;bottom:1.5rem;right:1.5rem;z-index:500;background:#25D366;color:#fff;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.5);text-decoration:none;transition:transform .2s,box-shadow .2s}
+    .wf:hover{transform:scale(1.1);box-shadow:0 6px 32px rgba(37,211,102,.65)}
+    .wp{position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(37,211,102,.4);animation:pg 2s infinite}
+    @keyframes pg{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.5);opacity:0}}
+
+    /* ANIMS */
+    @keyframes fU{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fI{from{opacity:0}to{opacity:1}}
+    .rv{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+    .rv.vi{opacity:1;transform:translateY(0)}
+
+    /* ── NAV: texto "Tirar dúvida" some no mobile, fica só ícone ── */
+    .bg-txt{display:inline}
+
+    /* ── TOUCH TARGET mínimo 48px para público +40 ── */
+    .bp,.bo,.bg{min-height:48px}
+
+    /* ══════════════════════════════════════════
+       RESPONSIVO — MOBILE FIRST
+       Base já escrita para desktop.
+       Breakpoints: 480px (celular pequeno),
+                    768px (celular/tablet),
+                    900px (tablet/desktop).
+    ══════════════════════════════════════════ */
+
+    /* ── 900px: tablet e celular grande ── */
+    @media(max-width:900px){
+
+      /* NAV */
+      .logo{font-size:1.3rem}
+      .bg{font-size:.82rem;padding:.5rem .8rem}
+      .bg-txt{display:none}
+      nav .bp{font-size:.82rem;padding:.5rem 1rem}
+
+      /* URGENCY BAR */
+      .ub{font-size:.8rem;padding:.55rem .8rem}
+
+      /* HERO */
+      #hero{
+        grid-template-columns:1fr;
+        min-height:auto;
+        gap:0;
+        padding-left:5vw;
+        padding-right:5vw;
+        padding-bottom:3rem
+      }
+      .hv{display:none}
+      h1.hero{font-size:clamp(3.5rem,14vw,5rem)}
+      .hero-p{font-size:1rem;max-width:100%}
+      .hbtns{flex-direction:column;gap:.6rem}
+      .hbtns .bp,.hbtns .bo{width:100%;font-size:1rem;padding:.9rem 1.5rem;justify-content:center}
+      .hgar{font-size:.9rem}
+      .hps{flex-direction:column;align-items:flex-start;gap:.6rem;margin-top:2rem}
+      .eyebrow{font-size:.72rem;letter-spacing:.12em}
+
+      /* CREDIBILIDADE */
+      #cred{flex-direction:column;align-items:flex-start;gap:1rem;padding:1.8rem 5vw}
+      .ci{gap:1rem}
+      .c-it{font-size:.85rem}
+
+      /* DORES */
+      .dg{grid-template-columns:1fr;gap:2rem}
+      .dg > div:first-child .bp{width:100%;justify-content:center}
+
+      /* VAGAS */
+      .vagas-inner{grid-template-columns:1fr;gap:1.2rem}
+
+      /* SERVIÇOS */
+      .sg{grid-template-columns:1fr}
+      .sc2{padding:2rem 1.5rem 1.5rem}
+
+      /* TIMER */
+      #timer{flex-direction:column;gap:.75rem;text-align:center;padding:1.5rem 5vw}
+
+      /* PROCESSO */
+      .ps{grid-template-columns:1fr 1fr}
+      .ps::before{display:none}
+      .sp{padding:0 1rem 1.5rem}
+
+      /* GARANTIA */
+      #garantia{grid-template-columns:1fr;text-align:center;gap:2rem;padding:3.5rem 5vw}
+      .gs{margin:0 auto}
+      #garantia .rv{text-align:center}
+      #garantia .bp{margin:0 auto}
+
+      /* DIFERENCIAIS */
+      .dif-grid{grid-template-columns:1fr 1fr}
+      .dif-item{padding:1.4rem}
+
+      /* SOBRE */
+      #sobre{grid-template-columns:1fr;gap:2rem}
+      .svw{display:none}
+      #sobre .bp{width:100%;justify-content:center}
+
+      /* DEPOIMENTOS */
+      .dg2{grid-template-columns:1fr}
+
+      /* FAQ */
+      .fg{grid-template-columns:1fr}
+
+      /* CTA FINAL */
+      .cfb{flex-direction:column;align-items:center}
+      .cfb .bp,.cfb .bo,.cfb .bg{width:100%;max-width:400px;justify-content:center;font-size:1rem;padding:1rem 1.5rem}
+      .segs{gap:.8rem}
+
+      /* FOOTER */
+      footer{flex-direction:column;text-align:center;gap:.6rem;padding:1.5rem 5vw}
+    }
+
+    /* ── 600px: celular médio ── */
+    @media(max-width:600px){
+
+      /* BASE */
+      :root{font-size:16px}
+
+      /* NAV — esconde texto, mantém ícone no whats */
+      .bg span{display:none}
+      .bg svg{display:block}
+      .bg{padding:.5rem .7rem}
+
+      /* HERO */
+      h1.hero{font-size:clamp(3rem,16vw,4.5rem)}
+
+      /* PROCESSO */
+      .ps{grid-template-columns:1fr}
+      .sc3{width:42px;height:42px;font-size:1.1rem;margin-bottom:1rem}
+
+      /* DIFERENCIAIS */
+      .dif-grid{grid-template-columns:1fr}
+
+      /* VAGAS */
+      .vaga-num{font-size:2.2rem}
+      .vaga-titulo{font-size:1.2rem}
+
+      /* SEÇÃO LABELS */
+      .st{font-size:clamp(2rem,10vw,3rem)}
+
+      /* GARANTIA */
+      .gs{width:140px;height:140px}
+      .gd{font-size:3rem}
+
+      /* CARDS SERVIÇO */
+      .ct{font-size:1.5rem}
+      .preco-anual-valor{font-size:2rem}
+
+      /* SEGS */
+      .segs{flex-direction:column;align-items:center;gap:.5rem}
+
+      /* TIMER */
+      .tn{font-size:1.5rem}
+      .tb{min-width:44px;padding:.35rem .6rem}
+
+      /* PROVA SOCIAL HERO */
+      .hps{margin-top:1.5rem}
+      .ptxt{font-size:.88rem}
+      .sm{font-size:.78rem}
+
+      /* AVALIAÇÃO GOOGLE */
+      #depo > .rv{flex-direction:column;align-items:flex-start;gap:1rem}
+    }
+
+    /* ── 400px: celular pequeno ── */
+    @media(max-width:400px){
+      h1.hero{font-size:clamp(2.8rem,17vw,3.8rem)}
+      .hbtns .bp,.hbtns .bo{padding:.85rem 1rem;font-size:.95rem}
+      .eyebrow{font-size:.68rem;padding:.35rem .7rem}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ TOPO FIXO: barra + nav juntos ═══ -->
+<div id="topo-fixo">
+<div class="ub">
+  🔥 Vagas presenciais limitadas — <span>período da tarde com lista de espera. Manhã: últimas vagas disponíveis.</span>
+</div>
+<nav id="nav">
+  <div class="logo">PERSONAL<em>STUDIO</em></div>
+  <div class="nav-r">
+    <a href="https://wa.me/5544991723451?text=Olá%20Milton!%20Vim%20pelo%20site%20e%20quero%20tirar%20uma%20dúvida."
+       class="bg" onclick="px('WhatsApp','Nav')" target="_blank" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="bg-txt">Tirar dúvida</span>
+    </a>
+    <a href="#servicos" class="bp" onclick="px('CTA','Nav_VerPlanos')" style="font-size:.9rem;padding:.6rem 1.3rem">Ver Planos →</a>
+  </div>
+</nav>
+</div><!-- /topo-fixo -->
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hbg"></div>
+  <div>
+    <div class="eyebrow">Personal Trainer · CREF 025639-G/PR · Paranavaí</div>
+    <h1 class="hero">PARE DE<br><span class="ot">TREINAR</span><br>SEM <span class="vd">RESULTADO.</span></h1>
+    <p class="hero-p">
+      Você já tentou treinar sozinho — e parou. Começou a emagrecer — e ficou flácido. Ou simplesmente tem medo de se machucar. <strong>Esse é exatamente o problema que resolvo</strong>, há mais de 10 anos em Paranavaí.
+    </p>
+    <div class="hgar">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Plano anual: cancele em 30 dias sem multa se não gostar
+    </div>
+    <div class="hbtns">
+      <a href="#ctaf" class="bp" onclick="px('CTA','Hero_Comecar')">Quero Começar Agora →</a>
+      <a href="https://wa.me/5544991723451?text=Olá%20Milton!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avaliação%20presencial.%20Quais%20os%20horários%20disponíveis?"
+         class="bo" target="_blank" rel="noopener" onclick="px('WhatsApp','Hero_Agendamento')">
+        Agendar Avaliação Grátis
+      </a>
+    </div>
+    <div class="hps">
+      <div class="ptxt">
+        <span class="sm">★★★★★ · nota 5,0 no Google · 11 avaliações</span>
+        <strong>43 alunos ativos · mais de 10 anos de experiência</strong>
+        <span>80%+ renovam — a maioria permanece por anos</span>
+      </div>
+    </div>
+  </div>
+  <div class="hv">
+    <div style="position:relative;width:100%;max-width:420px">
+      <div class="hfoto">
+        <!-- FOTO HERO: substitua este bloco por <img src="sua-foto.jpg" alt="Milton Gasparotto" style="width:100%;height:100%;object-fit:cover"> -->
+        <div style="width:100%;height:100%;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:#bbb;border:3px dashed #ddd">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <div style="text-align:center;padding:0 1rem">
+            <div style="font-size:.9rem;font-weight:600;color:#999;letter-spacing:.05em">FOTO PRINCIPAL</div>
+            <div style="font-size:.75rem;color:#bbb;margin-top:.3rem">Foto do Milton em ação<br>no studio · formato retrato</div>
+          </div>
+        </div>
+      </div>
+      <div class="hf1">
+        <div class="fn">+10 anos</div>
+        <div class="fl">formado e atuando<br>em Paranavaí</div>
+      </div>
+      <div class="hf2">
+        <span class="ck">✓</span><span>Studio privativo no Centro</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CREDIBILIDADE ═══ -->
+<div class="div"></div>
+<div id="cred">
+  <div class="ci">
+    <span class="c-it">CREF 025639-G/PR</span><span class="c-it">·</span>
+    <span class="c-it">PÓS-GRADUADO EM HIPERTROFIA E EMAGRECIMENTO</span><span class="c-it">·</span>
+    <span class="c-it">ESPECIALISTA EM CORREÇÃO POSTURAL</span><span class="c-it">·</span>
+    <span class="c-it">CERTIFICADO EM LIBERAÇÃO MIOFASCIAL</span><span class="c-it">·</span>
+    <span class="c-it">+10 ANOS ATUANDO COMO PERSONAL</span>
+  </div>
+</div>
+<div class="div"></div>
+
+<!-- ═══ DORES ═══ -->
+<section id="dores">
+  <div class="dg">
+    <div>
+      <div class="sl rv">Você se identifica?</div>
+      <h2 class="st rv">Por que você<br>ainda não<br><span class="vd">chegou lá?</span></h2>
+      <p style="color:var(--dimmed);font-size:1.05rem;line-height:1.8;margin-top:1rem;margin-bottom:2rem" class="rv">
+        A maioria das pessoas já tentou treinar várias vezes — e parou. Não é falta de vontade. É falta de direcionamento.
+      </p>
+      <a href="https://wa.me/5544991723451?text=Milton,%20preciso%20de%20ajuda%20para%20sair%20do%20lugar%20nos%20treinos."
+         class="bp rv" target="_blank" rel="noopener" onclick="px('WhatsApp','Dores')" style="font-size:1.05rem;padding:1rem 2.2rem">
+        Quero Sair Disso →
+      </a>
+    </div>
+    <div class="dl">
+      <div class="di rv">
+        <div class="dic">😤</div>
+        <div class="dt"><strong>Começou a emagrecer e ficou flácido</strong><span>Perdeu peso mas não ganhou o corpo que queria. O treino certo equilibra emagrecimento e tônus ao mesmo tempo.</span></div>
+      </div>
+      <div class="di rv">
+        <div class="dic">🤕</div>
+        <div class="dt"><strong>Tem dor no ombro, coluna ou joelho</strong><span>Dor crônica não some sozinha — e treino errado piora. Trabalho especificamente com redução de dor articular.</span></div>
+      </div>
+      <div class="di rv">
+        <div class="dic">😰</div>
+        <div class="dt"><strong>Tem medo de se machucar treinando</strong><span>Sem supervisão, o risco é real. No studio, cada exercício é acompanhado em tempo real — sem improviso.</span></div>
+      </div>
+      <div class="di rv">
+        <div class="dic">📉</div>
+        <div class="dt"><strong>Iniciou e parou várias vezes</strong><span>Baixa adesão quase sempre tem a mesma causa: treino que não cabe na vida real. Minha metodologia se adapta à sua rotina.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CARD DE VAGAS — escassez dinâmica ═══ -->
+<section id="vagas">
+  <div style="text-align:center;margin-bottom:1.5rem">
+    <div class="sl" style="justify-content:center">Disponibilidade atual</div>
+    <h3 style="font-family:var(--T);font-size:clamp(1.8rem,3vw,2.5rem)">Vagas <span style="color:var(--verde)">abertas este mês</span></h3>
+  </div>
+  <div class="vagas-inner">
+
+    <!-- Presencial -->
+    <div class="vaga-card rv">
+      <div class="vaga-titulo">Treino Presencial</div>
+      <div class="vaga-bar-wrap">
+        <div class="vaga-bar" id="bar-pres" style="width:0%"></div>
+      </div>
+      <div style="display:flex;align-items:flex-end;gap:.5rem">
+        <div class="vaga-num" id="num-pres">–</div>
+        <div class="vaga-label" id="label-pres">vagas disponíveis (manhã)</div>
+      </div>
+      <div class="vaga-espera" id="espera-pres" style="display:none">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Período da tarde: lista de espera — entre em contato para reservar sua vaga
+      </div>
+      <a href="#ctaf" class="bp" style="margin-top:1rem;font-size:.95rem;width:100%;justify-content:center" onclick="px('CTA','Vagas_Presencial')">
+        Garantir Minha Vaga →
+      </a>
+    </div>
+
+    <!-- Consultoria -->
+    <div class="vaga-card rv">
+      <div class="vaga-titulo">Consultoria (Online e Presencial)</div>
+      <div class="vaga-bar-wrap">
+        <div class="vaga-bar" id="bar-cons" style="width:0%"></div>
+      </div>
+      <div style="display:flex;align-items:flex-end;gap:.5rem">
+        <div class="vaga-num" id="num-cons">–</div>
+        <div class="vaga-label" id="label-cons">vagas disponíveis este mês</div>
+      </div>
+      <div class="vaga-espera" id="espera-cons" style="display:none">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Vagas esgotadas para este mês — entre na lista de espera para o próximo
+      </div>
+      <a href="#ctaf" class="bp" style="margin-top:1rem;font-size:.95rem;width:100%;justify-content:center" onclick="px('CTA','Vagas_Consultoria')">
+        Garantir Minha Vaga →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ SERVIÇOS ═══ -->
+<section id="servicos">
+  <div class="sl rv">Modalidades de atendimento</div>
+  <h2 class="st rv">Três formas de<br>treinar <span class="vd">comigo</span></h2>
+  <p class="ss rv">Cada plano atende um perfil diferente. Escolha o que faz mais sentido para você — e comece hoje.</p>
+
+  <div class="sg rv">
+
+    <!-- ── PRESENCIAL ── -->
+    <div class="sc2">
+      <span class="cnb">01</span>
+      <div class="ci2">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <h3 class="ct">Treino Presencial</h3>
+      <p style="font-size:.92rem;color:var(--dimmed);line-height:1.6">Para quem quer supervisão real e prefere fugir da agitação da academia convencional.</p>
+      <ul class="cb2">
+        <li>Máx. 3 alunos por horário — atenção individual garantida</li>
+        <li>Correção de postura e execução em tempo real</li>
+        <li>App com vídeos, histórico e relatórios</li>
+        <li>Sugestão de cardápio inclusa</li>
+        <li>Reavaliação a cada 60 dias</li>
+        <li>Studio privativo no Centro de Paranavaí</li>
+      </ul>
+      <div class="cpw">
+        <div class="preco-anual-label">Plano anual — melhor valor</div>
+        <div class="preco-anual-valor">12 × R$ 379</div>
+        <div class="preco-anual-detalhe">a partir de R$ 379/mês</div>
+        <div style="font-size:.82rem;color:var(--dimmed);margin-top:.3rem">Valores variam conforme a frequência semanal. Consulte na avaliação.</div>
+        <div class="preco-sep"></div>
+        <div class="pgto-linha"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Boleto / PIX</div>
+        <div class="pgto-linha"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Cartão recorrente</div>
+        <div class="pgto-linha"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Cartão de crédito parcelado</div>
+        <div class="garantia-mini">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Plano anual: 30 dias sem multa para cancelar
+        </div>
+      </div>
+      <a href="#ctaf" class="bp cc" onclick="px('CTA','Presencial_CTA')">
+        Quero Começar →
+      </a>
+      <div class="cgm">Sem fidelidade nos planos mensais</div>
+    </div>
+
+    <!-- ── CONSULTORIA PRESENCIAL — DESTAQUE ── -->
+    <div class="sc2" style="border-top:3px solid var(--verde);background:#111a0f">
+      <span class="cb">Melhor Custo Benefício</span>
+      <span class="cnb">02</span>
+      <div class="ci2" style="border-color:rgba(57,255,20,.4);margin-top:.5rem">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+      </div>
+      <h3 class="ct">Consultoria Presencial</h3>
+      <p style="font-size:.92rem;color:var(--dimmed);line-height:1.6">Avaliações presenciais no studio + treino no seu local de preferência. O melhor dos dois mundos.</p>
+      <ul class="cb2">
+        <li>Avaliações físicas periódicas no studio</li>
+        <li>Sugestão de cardápio personalizada</li>
+        <li>App com treino, avaliações e relatórios</li>
+        <li>Suporte via chat — resposta em até 2 horas</li>
+        <li>Reavaliação a cada 60 dias com dados reais</li>
+        <li>Ideal para quem já tem local para treinar</li>
+      </ul>
+      <div class="cpw">
+        <div class="preco-anual-label">Plano anual — melhor valor</div>
+        <div class="preco-anual-valor">12 × R$ 142</div>
+        <div class="preco-anual-detalhe">a partir de R$ 142/mês</div>
+        <div class="preco-sep"></div>
+        <div class="pgto-linha"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Boleto / PIX</div>
+        <div class="pgto-linha"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Cartão recorrente</div>
+        <div class="pgto-linha"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Cartão de crédito parcelado</div>
+        <div class="garantia-mini">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Plano anual: 30 dias sem multa para cancelar
+        </div>
+      </div>
+      <a href="#ctaf" class="bp cc" onclick="px('CTA','ConsPresencial_CTA')">
+        Quero Começar →
+      </a>
+      <div class="cgm">Plano anual com menor risco</div>
+    </div>
+
+    <!-- ── CONSULTORIA ONLINE ── -->
+    <div class="sc2">
+      <span class="cnb">03</span>
+      <div class="ci2">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <h3 class="ct">Consultoria Online</h3>
+      <p style="font-size:.92rem;color:var(--dimmed);line-height:1.6">Para quem já treina mas está estagnado e quer sair do lugar — de qualquer lugar do Brasil.</p>
+      <ul class="cb2">
+        <li>Avaliação via app e formulários de acompanhamento</li>
+        <li>Treino no nosso app exclusivo</li>
+        <li>Sugestão de cardápio inclusa</li>
+        <li>Suporte via chat — resposta em até 2 horas</li>
+        <li>Reavaliação bimestral com dados reais</li>
+        <li>Atende todo o Brasil — treine onde quiser</li>
+      </ul>
+      <div class="cpw">
+        <div class="preco-anual-label">Plano anual — melhor valor</div>
+        <div class="preco-anual-valor">12 × R$ 94</div>
+        <div class="preco-anual-detalhe">a partir de R$ 94/mês</div>
+        <div class="preco-sep"></div>
+        <div class="pgto-linha"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>1ª parcela: PIX / Boleto</div>
+        <div class="pgto-linha"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>11 parcelas restantes: cartão de crédito</div>
+        <div class="garantia-mini">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Plano anual: 30 dias sem multa para cancelar
+        </div>
+      </div>
+      <a href="#ctaf" class="bp cc" onclick="px('CTA','ConsOnline_CTA')">
+        Quero Começar →
+      </a>
+      <div class="cgm">Início imediato após confirmação</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ TIMER ═══ -->
+<div id="timer">
+  <div class="tl">⚡ Vagas online abertas neste mês — <strong>encerram no dia 1º do próximo mês:</strong></div>
+  <div class="td">
+    <div class="tb"><div class="tn" id="th">00</div><div class="tt">dias</div></div>
+    <span class="ts">:</span>
+    <div class="tb"><div class="tn" id="tm">00</div><div class="tt">horas</div></div>
+    <span class="ts">:</span>
+    <div class="tb"><div class="tn" id="ts">00</div><div class="tt">min</div></div>
+  </div>
+  <a href="#ctaf" class="bp" onclick="px('CTA','Timer')" style="font-size:.95rem;padding:.7rem 1.6rem">
+    Garantir Vaga Antes de Encerrar →
+  </a>
+</div>
+
+<!-- ═══ PROCESSO ═══ -->
+<section id="processo">
+  <div class="sl rv">Método Milton Gasparotto</div>
+  <h2 class="st rv">Como funciona<br><span class="vd">na prática</span></h2>
+  <div class="ps">
+    <div class="sp rv">
+      <div class="sc3">01</div>
+      <div class="st2">Avaliação completa</div>
+      <p class="sd">Avalio sua composição corporal e suas necessidades — histórico, limitações, rotina e objetivo real. Sem isso, qualquer treino é genérico.</p>
+    </div>
+    <div class="sp rv">
+      <div class="sc3">02</div>
+      <div class="st2">Meta realista</div>
+      <p class="sd">Definimos juntos uma meta alcançável e personalizada para o seu corpo — não para o corpo de blogueiros de internet.</p>
+    </div>
+    <div class="sp rv">
+      <div class="sc3">03</div>
+      <div class="st2">Prescrição baseada em dados</div>
+      <p class="sd">Treino funcional + musculação combinados. Tudo baseado na análise do seu corpo e resultado real — não em achismo.</p>
+    </div>
+    <div class="sp rv">
+      <div class="sc3">04</div>
+      <div class="st2">Reavaliação a cada 60 dias</div>
+      <p class="sd">O protocolo evolui com você. A cada bimestre ajustamos tudo com base nos dados reais — e você vê o progresso documentado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GARANTIA ═══ -->
+<section id="garantia">
+  <div class="gs rv">
+    <div class="gd">30</div>
+    <div class="gt">dias sem<br>multa</div>
+  </div>
+  <div>
+    <div class="sl rv">Risco zero para você</div>
+    <h2 class="st rv">Plano anual sem<br><span class="vd">medo de errar.</span></h2>
+    <p class="rv" style="color:var(--dimmed);font-size:1.05rem;line-height:1.8;margin-top:1rem;max-width:580px">
+      Feche um plano anual. Se nos primeiros 30 dias você quiser cancelar — por qualquer motivo — cancela sem pagar multa e sem burocracia. Ponto final. Essa é a minha confiança no trabalho que faço. Se você não ficar satisfeito, o prejuízo é meu.
+    </p>
+    <div style="margin-top:1.5rem" class="rv">
+      <a href="#ctaf" class="bp" onclick="px('CTA','Garantia')" style="font-size:1.05rem;padding:1rem 2.2rem">
+        Começar Sem Risco →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DIFERENCIAIS — PRESENCIAL ═══ -->
+<section id="difs">
+  <div class="sl rv">Por que o Personal Studio</div>
+  <h2 class="st rv">O que nenhuma<br><span class="vd">academia oferece</span></h2>
+  <p class="ss rv">Treinamento presencial individualizado com estrutura profissional — sem barulho, sem fila de equipamento, sem distração.</p>
+
+  <div class="dif-grid rv">
+    <div class="dif-item">
+      <div class="dif-ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div class="dif-titulo">Máximo 3 alunos por horário</div>
+      <div class="dif-desc">Você não é mais um entre 100 pessoas na sala de academia. Atenção individual em cada treino, sempre — sem exceção.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+      </div>
+      <div class="dif-titulo">App exclusivo com tudo centralizado</div>
+      <div class="dif-desc">Vídeos de execução, histórico de treinos, avaliações e relatórios num só lugar. Você acompanha cada passo da sua evolução.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="dif-titulo">Horários flexíveis e sem fila</div>
+      <div class="dif-desc">Studio privativo com agenda organizada. Sem esperar equipamento, sem barulho de multidão — você treina no seu tempo e com foco total.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <div class="dif-titulo">Metodologia baseada em dados</div>
+      <div class="dif-desc">Nada de achismo. Cada alteração no protocolo segue análise real dos seus resultados. Ciência aplicada ao seu corpo.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="dif-titulo">Especialista em quem nunca treinou</div>
+      <div class="dif-desc">Não trabalho com todo mundo. Sou especializado em quem não tem experiência, tem dor, ou já parou várias vezes. Esse é o meu público.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+      </div>
+      <div class="dif-titulo">Treino que cabe na sua vida</div>
+      <div class="dif-desc">Metodologia adaptativa: sua rotina de treino, alimentação e descanso se encaixa na vida real — não complica, facilita.</div>
+    </div>
+  </div>
+
+  <!-- FOTO DO STUDIO — placeholder -->
+  <div class="rv" style="margin-top:2rem;width:100%;aspect-ratio:16/6;border-radius:6px;overflow:hidden;border:3px dashed #2a2a2a;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.8rem;color:#bbb">
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <div style="text-align:center">
+      <div style="font-size:.9rem;font-weight:600;color:#999;letter-spacing:.05em">FOTO DO STUDIO</div>
+      <div style="font-size:.75rem;color:#bbb;margin-top:.25rem">Foto panorâmica do interior do Personal Studio · formato paisagem</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DIFERENCIAIS — CONSULTORIA ONLINE ═══ -->
+<section id="difs-online">
+  <div class="sl rv">Por que a Consultoria Online</div>
+  <h2 class="st rv">Resultado real<br><span class="vd">treinando onde quiser</span></h2>
+  <p class="ss rv">Acompanhamento profissional completo — mesmo à distância. Para quem está estagnado e quer um direcionamento de verdade.</p>
+
+  <div class="dif-grid rv">
+    <div class="dif-item">
+      <div class="dif-ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="dif-titulo">Treine em qualquer lugar do Brasil</div>
+      <div class="dif-desc">Academia, home gym ou ao ar livre — o protocolo é montado para funcionar com o que você tem disponível, onde você estiver.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+      </div>
+      <div class="dif-titulo">App exclusivo</div>
+      <div class="dif-desc">Nada de treino genérico copiado da internet. Cada treino é montado para o seu histórico, objetivo e estrutura de treino.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </div>
+      <div class="dif-titulo">Suporte real — não é robô</div>
+      <div class="dif-desc">Você manda mensagem, eu respondo. Dúvida de execução, ajuste de treino, desmotivação — estou disponível com resposta humana.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+      </div>
+      <div class="dif-titulo">Reavaliação bimestral com dados</div>
+      <div class="dif-desc">A cada 60 dias analisamos os números reais da sua evolução pelo App e ajustamos o protocolo. Você vê o progresso documentado — não só sente.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="dif-titulo">Sugestão de cardápio inclusa</div>
+      <div class="dif-desc">Treino sem alimentação adequada é metade do resultado. Você recebe orientações nutricionais básicas alinhadas ao seu objetivo.</div>
+    </div>
+    <div class="dif-item">
+      <div class="dif-ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="dif-titulo">Início imediato com garantia</div>
+      <div class="dif-desc">Plano anual com 30 dias sem multa. Você começa hoje, testa na prática e só continua se tiver resultados. O risco é meu.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SOBRE ═══ -->
+<section id="sobre">
+  <div class="svw">
+    <div class="sln"></div>
+    <div class="sfoto">
+      <!-- FOTO SOBRE: substitua por <img src="milton-sobre.jpg" alt="Milton Gasparotto" style="width:100%;height:100%;object-fit:cover"> -->
+      <div style="width:100%;height:100%;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:#bbb;border:3px dashed #ddd">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <div style="text-align:center;padding:0 1rem">
+          <div style="font-size:.9rem;font-weight:600;color:#999;letter-spacing:.05em">FOTO — SOBRE MIM</div>
+          <div style="font-size:.75rem;color:#bbb;margin-top:.3rem">Foto profissional do Milton<br>formato retrato · fundo neutro</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="sl rv">Quem é Milton Gasparotto</div>
+    <h2 class="st rv">Entendo o seu<br>problema porque<br><span class="vd">já fui você.</span></h2>
+    <p class="rv" style="color:var(--dimmed);font-size:1.05rem;line-height:1.8;margin-top:1.2rem">
+      Comecei a treinar e fazia perguntas para os professores da academia — cada um dava uma resposta diferente. Isso me motivou a entrar na Educação Física para entender como as coisas realmente funcionam.
+    </p>
+    <p class="rv" style="color:var(--dimmed);font-size:1.05rem;line-height:1.8;margin-top:.8rem">
+      Antes disso, ia para a academia com amigos e, na brincadeira de subir carga sem nenhuma orientação, acabei tendo uma lesão no ombro. Foi um divisor de águas — percebi o quão perigoso é treinar sem acompanhamento profissional, e foi nessa época que decidi cursar Educação Física.
+    </p>
+    <p class="rv" style="color:var(--dimmed);font-size:1.05rem;line-height:1.8;margin-top:.8rem">
+      Descobri que existe uma base científica que precisa ser seguida — e que treino, alimentação e descanso precisam estar em equilíbrio. Simples assim. Minha missão é facilitar, não complicar.
+    </p>
+    <ul class="slst rv">
+      <li>CREF 025639-G/PR — ativo e regularizado</li>
+      <li>Pós-graduação em hipertrofia e emagrecimento</li>
+      <li>Especialização em correção postural e biomecânica</li>
+      <li>Certificações em liberação miofascial</li>
+      <li>Formado em 2015 · mais de 10 anos atuando como Personal</li>
+      <li>Studio privativo — R. Paraíba, 1435 · Centro</li>
+    </ul>
+    <div class="rv">
+      <a href="https://wa.me/5544991723451?text=Olá%20Milton!%20Quero%20conhecer%20seu%20trabalho."
+         class="bp" target="_blank" rel="noopener" onclick="px('WhatsApp','Sobre')" style="font-size:1.05rem;padding:1rem 2.2rem">
+        Falar Com o Milton →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ AVALIAÇÕES GOOGLE ═══ -->
+<section id="depo" style="padding:5rem 5vw;background:var(--esc)">
+  <div class="sl rv">O que nossos alunos dizem</div>
+  <h2 class="st rv">Avaliações reais<br><span class="vd">no Google</span></h2>
+
+  <!-- PROVA SOCIAL: nota + total -->
+  <div class="rv" style="display:flex;align-items:center;gap:1.5rem;margin-top:1.5rem;margin-bottom:2.5rem;flex-wrap:wrap;padding:1.5rem;background:var(--card);border:1px solid var(--borda);border-radius:6px;max-width:600px">
+    <div style="display:flex;align-items:center;gap:.75rem">
+      <!-- Ícone Google -->
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      <div>
+        <div style="font-family:var(--T);font-size:3rem;color:var(--branco);line-height:1">5,0</div>
+        <div style="font-size:.85rem;color:var(--dimmed);margin-top:.1rem">média Google</div>
+      </div>
+    </div>
+    <div style="flex:1">
+      <div style="color:#FBBC05;font-size:1.4rem;letter-spacing:.08em">★★★★★</div>
+      <div style="font-size:1rem;color:var(--branco);margin-top:.3rem;font-weight:500">11 avaliações verificadas</div>
+      <div style="font-size:.85rem;color:var(--dimmed);margin-top:.15rem">Personal Studio · Google Meu Negócio</div>
+    </div>
+    <a href="https://www.google.com/maps/place/Personal+Studio+l+Milton+Gasparotto+l+Paranava%C3%AD/@-23.0801269,-52.4648613,17z"
+       target="_blank" rel="noopener" onclick="px('CTA','Google_Reviews')"
+       style="display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--verde);border:1px solid rgba(57,255,20,.3);padding:.5rem 1rem;border-radius:3px;text-decoration:none;white-space:nowrap;transition:all .2s"
+       onmouseover="this.style.background='rgba(57,255,20,.08)'" onmouseout="this.style.background='transparent'">
+      Ver no Google →
+    </a>
+  </div>
+
+  <!-- WIDGET ELFSIGHT — avaliações reais do Google atualizadas automaticamente -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <div class="elfsight-app-a629c026-6298-4dc0-9273-b76dfc6cdca4" data-elfsight-app-lazy></div>
+
+  <!-- CARDS MANUAIS — avaliações reais de alunos -->
+  <div class="dg2" style="margin-top:2rem">
+    <div class="dc rv">
+      <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.4rem">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <div class="dstars">★★★★★</div>
+      </div>
+      <div class="dres">Atendimento personalizado</div>
+      <p class="dtxt">"Era exatamente o que eu buscava — atendimento personalizado, atenção totalmente ligada a cada exercício, explicação para que serve cada exercício. Ambiente aconchegante e organizado. E ainda ajuda a gente a ter um cardápio para perder peso. Estou muito feliz e satisfeita."</p>
+      <div class="dft">
+        <div class="dav">M</div>
+        <div>
+          <div class="dnm">Maria Elvira Ferreira</div>
+          <div class="din">Avaliação Google · Aluna Presencial</div>
+        </div>
+      </div>
+    </div>
+    <div class="dc rv">
+      <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.4rem">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <div class="dstars">★★★★★</div>
+      </div>
+      <div class="dres">Profissional e ser humano incrível</div>
+      <p class="dtxt">"Se você procura um Personal Trainer para preparar e acompanhar os seus treinos de forma segura, com finalidade estética, de reabilitação e de manutenção da sua saúde — prof. Milton com certeza é o que você precisa. Além de excelente profissional, é um ser humano incrível que te incentiva a não desistir e te mostra o quanto você é capaz."</p>
+      <div class="dft">
+        <div class="dav">B</div>
+        <div>
+          <div class="dnm">Beibidane de Jesus Silva</div>
+          <div class="din">Avaliação Google · Aluna de Consultoria</div>
+        </div>
+      </div>
+    </div>
+    <div class="dc rv">
+      <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.4rem">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <div class="dstars">★★★★★</div>
+      </div>
+      <div class="dres">Competente, atencioso e motivador</div>
+      <p class="dtxt">"Profissional extremamente competente, atencioso, que nos ajuda a alcançar o nosso objetivo com ânimo, alegria e disposição. Se quiser melhorar seu físico e sua saúde com atenção, simpatia e competência, procure o Milton — com certeza você terá isso e muito mais!"</p>
+      <div class="dft">
+        <div class="dav">G</div>
+        <div>
+          <div class="dnm">Graciele Preuss Rolim</div>
+          <div class="din">Avaliação Google · Aluna</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:2rem" class="rv">
+    <a href="https://www.google.com/maps/place/Personal+Studio+l+Milton+Gasparotto+l+Paranava%C3%AD/@-23.0801269,-52.4648613,17z"
+       target="_blank" rel="noopener" class="bo" onclick="px('CTA','Google_Reviews_Bottom')" style="font-size:.95rem">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      Ver todas as 11 avaliações no Google
+    </a>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section id="faq">
+  <div class="sl rv">Dúvidas frequentes</div>
+  <h2 class="st rv">Antes de decidir,<br><span class="vd">leia isso</span></h2>
+  <div class="fg rv">
+    <div class="fi" onclick="faqT(this)">
+      <div class="fp">Preciso ter experiência para começar?</div>
+      <div class="fr">Não — e minha especialidade são justamente os iniciantes. Trabalho especificamente com quem nunca treinou ou parou muitas vezes. O protocolo começa do zero, no nível que você está hoje.</div>
+    </div>
+    <div class="fi" onclick="faqT(this)">
+      <div class="fp">Trabalha com redução de dor articular?</div>
+      <div class="fr">Sim, é uma das minhas principais especialidades — ombro, coluna e joelho. O treino funcional combinado com musculação, quando bem prescrito, é uma das ferramentas mais eficazes para redução de dor crônica.</div>
+    </div>
+    <div class="fi" onclick="faqT(this)">
+      <div class="fp">Em quanto tempo vejo resultado?</div>
+      <div class="fr">No primeiro mês você já sente diferença — em disposição, sono e energia. Em 60 dias os resultados são observáveis. Entre 90 e 120 dias são consistentes e duradouros. Esse é o ciclo real — sem promessa mágica.</div>
+    </div>
+    <div class="fi" onclick="faqT(this)">
+      <div class="fp">Como funciona a garantia de 30 dias?</div>
+      <div class="fr">Simples: feche um plano anual. Se nos primeiros 30 dias você quiser cancelar — por qualquer motivo — cancela sem pagar multa e sem questionamento. É a minha confiança no trabalho.</div>
+    </div>
+    <div class="fi" onclick="faqT(this)">
+      <div class="fp">Qual a diferença entre presencial e consultoria presencial?</div>
+      <div class="fr">No presencial, você treina comigo no studio — estou ao seu lado em cada exercício. Na consultoria presencial, fazemos as avaliações no studio mas você treina no seu local de preferência com o protocolo que monto para você.</div>
+    </div>
+    <div class="fi" onclick="faqT(this)">
+      <div class="fp">A consultoria online funciona para quem nunca treinou?</div>
+      <div class="fr">A consultoria online é mais indicada para quem já tem experiência com treino mas está estagnado. Para iniciantes absolutos ou quem tem dores articulares, o presencial ou a consultoria presencial oferecem a supervisão necessária.</div>
+    </div>
+    <div class="fi" onclick="faqT(this)">
+      <div class="fp">Qual o endereço do studio?</div>
+      <div class="fr">R. Paraíba, 1435 — Térreo — Centro, Paranavaí - PR, 87701-080. Fale pelo WhatsApp para agendar uma visita sem compromisso.</div>
+    </div>
+    <div class="fi" onclick="faqT(this)">
+      <div class="fp">Precisa parar de comer tudo para ter resultado?</div>
+      <div class="fr">Não. Essa é a crença errada mais comum. O resultado vem do equilíbrio entre treino (força + cardio), alimentação adequada e descanso. Minha metodologia não complica — ela se adapta à sua vida real.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA FINAL ═══ -->
+<section id="ctaf">
+  <h2 class="cft rv">Chega de<br>adiar.<br><span class="vd">Começa hoje.</span></h2>
+  <p class="cfs rv">
+    Já ajudei centenas de pessoas em Paranavaí a saírem do mesmo lugar onde você está agora. O próximo passo é simples.
+  </p>
+  <div class="cfb rv">
+    <a href="https://app.fitcpx.com/checkout?s=cb15f47a-2fec-4c1f-93c6-4c2e751cd976"
+       class="bp" target="_blank" rel="noopener" onclick="px('Checkout','CTA_Final')"
+       style="font-size:1.05rem;padding:1.1rem 2.5rem">
+      Contratar — Consultoria Online ou Presencial →
+    </a>
+    <a href="https://wa.me/5544991723451?text=Olá%20Milton!%20Vi%20seu%20site%20e%20tenho%20interesse%20em%20começar%20a%20treinar.%20Pode%20me%20contar%20mais%20sobre%20os%20planos%20presenciais%20e%20como%20funciona%20o%20início?"
+       class="bo" target="_blank" rel="noopener" onclick="px('WhatsApp','CTA_Final')"
+       style="font-size:1.05rem;padding:1.1rem 2.5rem;display:inline-flex;align-items:center;gap:.5rem">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Dúvidas ou Agendamento Presencial — WhatsApp
+    </a>
+  </div>
+  <div class="segs rv">
+    <div class="seg"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>30 dias sem multa</div>
+    <div class="seg"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Pagamento seguro · parcelado</div>
+    <div class="seg"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Cancele quando quiser</div>
+    <div class="seg"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Início imediato</div>
+  </div>
+</section>
+
+<!-- ═══ GOOGLE MAPS ═══ -->
+<section style="padding:4rem 5vw;background:var(--esc)">
+  <div class="sl rv">Onde nos encontrar</div>
+  <h2 class="st rv">Personal Studio<br><span class="vd">no Centro de Paranavaí</span></h2>
+  <p style="color:var(--dimmed);font-size:1rem;margin-top:.8rem;margin-bottom:2rem" class="rv">
+    R. Paraíba, 1435 — Térreo — Centro, Paranavaí - PR · CEP 87701-080
+  </p>
+  <div class="rv" style="border-radius:8px;overflow:hidden;border:1px solid var(--borda2);width:100%;aspect-ratio:16/7">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.0!2d-52.4674362!3d-23.0801269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949297a624225bb5%3A0x769e6bbb24135a27!2sPersonal%20Studio%20l%20Milton%20Gasparotto%20l%20Paranava%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1715000000000"
+      width="100%" height="100%" style="border:0;display:block" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" title="Personal Studio Milton Gasparotto — Paranavaí PR">
+    </iframe>
+  </div>
+  <div style="margin-top:1.2rem;display:flex;flex-wrap:wrap;gap:.75rem" class="rv">
+    <a href="https://www.google.com/maps/dir/?api=1&destination=-23.0801269,-52.4648613"
+       target="_blank" rel="noopener" class="bo" style="font-size:.95rem"
+       onclick="px('CTA','Maps_Rota')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Como chegar
+    </a>
+    <a href="https://www.google.com/maps/place/Personal+Studio+l+Milton+Gasparotto+l+Paranava%C3%AD/@-23.0801269,-52.4648613,17z"
+       target="_blank" rel="noopener" class="bg" style="font-size:.95rem;padding:.75rem 1.4rem"
+       onclick="px('CTA','Maps_Google')">
+      Ver no Google Maps →
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="flogo">PERSONAL<em>STUDIO</em></div>
+  <div>CREF 025639-G/PR · Milton Gasparotto · Paranavaí, PR</div>
+  <div>
+    <a href="https://wa.me/5544991723451" target="_blank">WhatsApp</a> ·
+    <a href="https://instagram.com/personalstudio.pvai" target="_blank">@personalstudio.pvai</a>
+  </div>
+  <div>R. Paraíba, 1435 · Centro · © 2025</div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5544991723451?text=Olá%20Milton!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20os%20planos%20de%20treino."
+   class="wf" target="_blank" rel="noopener" onclick="px('WhatsApp','Float')" title="Falar com o Milton pelo WhatsApp">
+  <div class="wp"></div>
+  <svg width="27" height="27" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  /* ── PIXEL ── */
+  function px(a,l){
+    if(typeof fbq==='undefined')return;
+    const m={Checkout:['InitiateCheckout',{content_name:l}],Agendamento:['Schedule',{content_name:l}],WhatsApp:['Contact',{content_name:l}]};
+    const ev=m[a]||['Lead',{content_name:l}];
+    fbq('track',ev[0],ev[1]);
+  }
+
+  /* ── HERO PADDING: compensa a altura do bloco fixo (barra + nav) ── */
+  function ajustarHero(){
+    const topoH=document.getElementById('topo-fixo').offsetHeight;
+    document.getElementById('hero').style.paddingTop=(topoH+20)+'px';
+  }
+  ajustarHero();
+  window.addEventListener('resize',ajustarHero);
+
+  /* ── NAV compact no scroll ── */
+  window.addEventListener('scroll',()=>{
+    document.getElementById('nav').classList.toggle('sc',scrollY>60);
+  },{passive:true});
+
+  /* ── VAGAS DINÂMICAS baseadas no dia do mês ── */
+  (function(){
+    const hoje=new Date();
+    const dia=hoje.getDate();
+    const totalDias=new Date(hoje.getFullYear(),hoje.getMonth()+1,0).getDate();
+    const pct=dia/totalDias; // 0 = início, 1 = fim
+
+    // Presencial: inicia em 3, cai para 2 na semana 2, 1 na semana 3+
+    let vagasPres=dia<=7?3:dia<=14?2:1;
+    const maxPres=3;
+    const barPres=Math.round((vagasPres/maxPres)*100);
+
+    // Consultoria: inicia em 5, cai linearmente até 1 no último dia
+    let vagasCons=Math.max(1,Math.round(5-(4*pct)));
+    const maxCons=5;
+    const barCons=Math.round((vagasCons/maxCons)*100);
+
+    // Preenche presencial
+    document.getElementById('num-pres').textContent=vagasPres;
+    document.getElementById('bar-pres').style.width=barPres+'%';
+    if(dia>7){
+      document.getElementById('label-pres').textContent=vagasPres===1?'vaga disponível (manhã) — tarde: lista de espera':'vagas disponíveis (manhã) — tarde: lista de espera';
+      document.getElementById('espera-pres').style.display='flex';
+    }
+
+    // Preenche consultoria
+    document.getElementById('num-cons').textContent=vagasCons;
+    document.getElementById('bar-cons').style.width=barCons+'%';
+    if(vagasCons<=2){
+      document.getElementById('label-cons').textContent=vagasCons===1?'vaga restante — próximas entram em lista de espera':'vagas restantes — próximas entram em lista de espera';
+      document.getElementById('espera-cons').style.display='flex';
+    }
+  })();
+
+  /* ── TIMER: conta até o dia 1 do próximo mês ── */
+  (function(){
+    function pad(n){return String(n).padStart(2,'0');}
+    const now=new Date();
+    const end=new Date(now.getFullYear(),now.getMonth()+1,1,0,0,0).getTime();
+    function tick(){
+      const d=end-Date.now();
+      if(d<=0){
+        ['th','tm','ts'].forEach(id=>document.getElementById(id).textContent='00');
+        return;
+      }
+      document.getElementById('th').textContent=pad(Math.floor(d/86400000));
+      document.getElementById('tm').textContent=pad(Math.floor(d%86400000/3600000));
+      document.getElementById('ts').textContent=pad(Math.floor(d%3600000/60000));
+      setTimeout(tick,60000);
+    }
+    tick();
+  })();
+
+  /* ── FAQ ── */
+  function faqT(el){
+    const o=el.classList.contains('open');
+    document.querySelectorAll('.fi').forEach(i=>i.classList.remove('open'));
+    if(!o)el.classList.add('open');
+  }
+
+  /* ── SCROLL REVEAL ── */
+  const ro=new IntersectionObserver((es)=>{
+    es.forEach((e,i)=>{
+      if(e.isIntersecting){
+        setTimeout(()=>e.target.classList.add('vi'),i*70);
+        ro.unobserve(e.target);
+      }
+    });
+  },{threshold:.1});
+  document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
+</script>
+</body>
+</html>
